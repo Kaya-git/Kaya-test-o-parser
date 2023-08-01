@@ -5,7 +5,7 @@ class Product(models.Model):
     name = models.CharField(
         max_length=200,
         verbose_name='Название товара')
-    link = models.URLField()
+    link = models.URLField(max_length=1000)
     
     class Meta:
         ordering = ['id']
